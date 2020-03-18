@@ -79,7 +79,7 @@ def interpn(vol, loc, interp_method='linear'):
     # flatten and float location Tensors
     loc = tf.cast(loc, 'float32')
     
-    if isinstance(vol.shape, (tf.Dimension, tf.TensorShape)):
+    if isinstance(vol.shape, (tf.compat.v1.Dimension, tf.TensorShape)):
         volshape = vol.shape.as_list()
     else:
         volshape = vol.shape
@@ -283,7 +283,7 @@ def transform(vol, loc_shift, interp_method='linear', indexing='ij'):
     """
 
     # parse shapes
-    if isinstance(loc_shift.shape, (tf.Dimension, tf.TensorShape)):
+    if isinstance(loc_shift.shape, (tf.compat.v1.Dimension, tf.TensorShape)):
         volshape = loc_shift.shape[:-1].as_list()
     else:
         volshape = loc_shift.shape[:-1]
