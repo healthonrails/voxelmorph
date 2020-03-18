@@ -17,6 +17,11 @@ keywords: machine learning, convolutional neural networks, alignment, mapping, r
 # Instructions
 
 ## Setup
+You can choose to install the package as follows.
+```bash
+pip install -e .
+```
+Then you can avoid to add `ext` to your Python path. 
 It might be useful to have each folder inside the `ext` folder on your python path. 
 assuming voxelmorph is setup at `/path/to/voxelmorph/`:
 
