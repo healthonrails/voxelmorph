@@ -21,14 +21,14 @@ import matplotlib
 import matplotlib.pyplot as plt
 import warnings
 from imp import reload
-import pytools.timer as timer
+import voxelmorph.ext.pytoolslib.pytools.timer as timer
 
-import pynd.ndutils as nd
-import pynd.segutils as su
+import voxelmorph.ext.pyndlib.pynd.ndutils as nd
+import voxelmorph.ext.pyndlib.pynd.segutils as su
 
 # the neuron folder should be on the path
-import neuron.plot as nrn_plt
-import neuron.utils as nrn_utils
+import voxelmorph.ext.neuron.neuron.plot as nrn_plt
+import voxelmorph.ext.neuron.neuron.utils as nrn_utils
 
 class ModelWeightCheck(keras.callbacks.Callback):
     """

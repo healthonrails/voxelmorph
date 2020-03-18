@@ -1,2 +1,5 @@
 __pycache__/
 scratch/*
+*.pyc
+ext/*/*/*.pyc
+voxelmorph.egg-info

@@ -8,7 +8,7 @@ see e.g. more powerful unet function in https://github.com/adalca/neuron/blob/ma
 """
 # main imports
 import sys
-
+import os
 # third party
 import numpy as np
 import keras.backend as K
@@ -21,16 +21,14 @@ from keras.initializers import RandomNormal
 import keras.initializers
 import tensorflow as tf
 
+
 # import neuron layers, which will be useful for Transforming.
-sys.path.append('../ext/neuron')
-sys.path.append('../ext/pynd-lib')
-sys.path.append('../ext/pytools-lib')
-import neuron.layers as nrn_layers
-import neuron.models as nrn_models
-import neuron.utils as nrn_utils
+import voxelmorph.ext.neuron.neuron.layers as nrn_layers
+import voxelmorph.ext.neuron.neuron.models as nrn_models
+import voxelmorph.ext.neuron.neuron.utils as nrn_utils
 
 # other vm functions
-import losses
+#import losses as vm_losses
 
 
 def unet_core(vol_size, enc_nf, dec_nf, full_size=True, src=None, tgt=None, src_feats=1, tgt_feats=1):

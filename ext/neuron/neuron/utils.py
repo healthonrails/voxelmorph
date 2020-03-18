@@ -24,11 +24,11 @@ import numpy as np
 from tqdm import tqdm_notebook as tqdm
 from pprint import pformat
 
-import pytools.patchlib as pl
-import pytools.timer as timer
+import voxelmorph.ext.pytoolslib.pytools.patchlib as pl
+import voxelmorph.ext.pytoolslib.pytools.timer as timer
 
 # local imports
-import pynd.ndutils as nd
+import voxelmorph.ext.pyndlib.pynd.ndutils as nd
 
 # often changed file
 from imp import reload

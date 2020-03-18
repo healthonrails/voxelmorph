@@ -27,7 +27,7 @@ from subprocess import call
 
 
 # import local ndutils
-import pynd.ndutils as nd
+import voxelmorph.ext.pyndlib.pynd.ndutils as nd
 import re
 
 from imp import reload

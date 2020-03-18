@@ -16,7 +16,7 @@ import random
 import numpy as np
 
 # local
-import pynd.ndutils as nd
+import voxelmorph.ext.pyndlib.pynd.ndutils as nd
 from imp import reload
 reload(nd)
 

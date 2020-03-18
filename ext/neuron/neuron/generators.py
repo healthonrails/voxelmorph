@@ -15,9 +15,9 @@ import keras.preprocessing.image
 from keras.models import Model
 
 # local packages
-import pynd.ndutils as nd
-import pytools.patchlib as pl
-import pytools.timer as timer
+import voxelmorph.ext.pyndlib.pynd.ndutils as nd
+import voxelmorph.ext.pytoolslib.pytools.patchlib as pl
+import voxelmorph.ext.pytoolslib.pytools.timer as timer
 
 # reload patchlib (it's often updated right now...)
 from imp import reload
